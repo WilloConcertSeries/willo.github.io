@@ -1,11 +1,49 @@
-@import url(https://github.com/masayajunior/masayajunior.github.io/blob/master/fonts/Gotham-Bold.ttf);
+@import url(https://github.com/WilloConcertSeries/willoconcertseries.github.io/blob/main/fonts/AvenirNextLTPro-Regular.otf);
+@import url(https://github.com/WilloConcertSeries/willoconcertseries.github.io/blob/main/fonts/AvenirNextLTPro-Bold.otf);
+@import url(https://github.com/WilloConcertSeries/willoconcertseries.github.io/blob/main/fonts/AvenirNextLTPro-Demi.otf);
+@import url(https://github.com/WilloConcertSeries/willoconcertseries.github.io/blob/main/fonts/AvenirNextLTPro-It.otf);
 
 
 body{
-    background-color: rgb(233,	142,	142	);
+    /* background-color: rgb(233,	142,	142	); */
     color: white;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 800;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 header {
     background-color: rgb(214,	82,	119	);
+    font-size: 10vh;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 60px;
+    height: 60px;
+}
+
+.logo {
+    background-image: url(../images/104434026_104668684635723_8649920483323648561_o.png);
+    background-size: 130px;
+    background-position: center;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top: 40px;
+}
+
+nav {
+    font-size: 2vh;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid green; */
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
