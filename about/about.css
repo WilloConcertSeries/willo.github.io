@@ -63,6 +63,10 @@ body{
     z-index: 0;
 }
 
+#fullLogo {
+    height: 130px;
+}
+
 .icon {
     height: 170px;
 }
@@ -154,55 +158,77 @@ hr {
 }
 
 .logoBG {
-    /* background-image: url('../images/logoBG.png');
-    background-position: center;
-    background-repeat: no-repeat; */
     opacity:.1;
-    color: rgb(20,106,211);
+    /* color: rgb(20,106,211); */
+    color: red;
     left:-100px;
     background-size: 1000px;
     position: absolute;
-    /* margin-left: -5%; */
     width: 106.9%;
-    height: 716px;
-    /* border: 2px solid blue; */
-    z-index: -1;
-    top: 900px;
+    height: 506px;
+    z-index: -2;
+    top: 1100px;
     text-align:center;
-    font-family: 'Bukhari Script';
+    font-family: 'Bukhari-Script';
     font-size: 700px;
+    overflow: hidden;
+    display: none;
+}
+
+#logoBGimg {
+    background-image: url('../images/logoBGimg.png');
+    background-size: 100%;
+    background-position-x:0px;
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+    margin-left: -5%;
+    /* left:-50px; */
+    position: absolute;
+    width: 101.5%;
+    height: 806px;
+    z-index: -5;
+    top: 1200px;
     overflow: hidden;
 }
 
 footer {
     background-color: rgb(214,	82,	119);
-    /* position: absolute; */
     font-size: 20px;
     font-weight: 300;
     color: rgb(12,35,42);
     margin-left: -5%;
-    width: 108.7%;
-    margin-top: 100px;
-    bottom: 0;
+    width: 105%;
+    position: absolute;
+    top: 1800px;
     left:0;
     height: 200px;
-    overflow: hidden;
+    border-top: 5px solid white;
+    border-bottom: 15px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
-    border-bottom: 15px solid white;
 }
+
+#links {
+    margin-left:5%;
+}
+
+#links a {text-decoration: none;
+   }
+
 
 .socials {
     /* margin-bottom: 75px; */
     height: 55px;
     width: 55px;
+    margin-bottom: -20px;
 }
 
 #footerText {
     position: absolute;
     font-size: 10px;
-    top: 1758px;
+    margin-left:5%;
+    top: 195px;
 }
 

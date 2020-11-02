@@ -63,6 +63,10 @@ body{
     z-index: 0;
 }
 
+#fullLogo {
+    height: 130px;
+}
+
 .icon {
     height: 170px;
 }
@@ -123,73 +127,263 @@ main {
     justify-content: center;
 }
 
-#FBContainer {
-    border: 10px solid rgb(248, 198, 87);
-    border-radius: 10px;
-    width: 500px;
-    height: 244px;
+.Featuring {
+    text-align: center;
+    margin-top: 100px;
+    color: rgb(12,35,42);
+    text-shadow: 0px 0px 20px white;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0), rgba(255,255,255,1),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0));
 }
 
-
-iframe {
-    display: block;
-    /* margin-left: 415px; */
+.mainTwo {
+    margin-top:100px;
+    margin-left:20px;
+    height: 800px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(253, 210, 149); */
 }
+
+#typeOne {
+    display: none;
+}
+
+#typeTwo {
+    display: inherit;
+}
+
+.Performers {
+    height: 1000px;
+    margin-left:-53px;
+    z-index: 2;
+}
+
+.performerPic {
+    position: absolute;
+    z-index: 3;
+    width: 295px;
+    margin-left:-16px;
+   
+}
+
+#mKPic {
+    left: 134px;
+    top: 1014px;
+}
+
+#cLPic {
+    left: 753px;
+    top: 1014px;
+}
+
+#wTPic {
+    left: 444px;
+    top: 1177px;
+}
+
+#nGPic {
+    left: 1063px;
+    top: 1177px;
+}
+
+#dPic {
+    left: 134px;
+    top: 1370px;
+}
+
+#tPic {
+    left: 753px;
+    top: 1370px;
+}
+
+.performerTag {
+    position: absolute;
+    height: 30px;
+    width: 295px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Avenir';
+    font-weight: 300;
+    z-index: 2;
+    border-radius: 1px;
+    margin-left:-16px;
+}
+
+#morghanKennedy {
+    background-color:   rgb(214,	82,	119	);
+    top: 1323px;
+    left: 134px;
+    color: white;
+}
+
+#chazzyLake {
+    background-color:   rgb(253, 210, 149);
+    top: 1323px;
+    left: 753px;
+    color: rgb(12,35,42);
+}
+
+#wayneTucker {
+    background-color:   rgb(12,35,42);
+    top: 1486px;
+    left: 444px;
+    color: white;
+}
+
+#nyahGrace {
+    background-color:   rgb(0,134,111);
+    top: 1486px;
+    left: 1063px;
+    color: white;
+}
+
+#Devoye {
+    background-color: rgb(20,106,211);
+    top: 1678px;
+    left: 134px;
+    color: white;
+}
+
+#Tarune {
+    background-color: rgb(214,	82,	119	);
+    top: 1678px;
+    left: 753px;
+    color: white;
+}
+
+.performerTagTwo {
+    position: absolute;
+    height: 30px;
+    width: 295px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Avenir';
+    font-weight: 500;
+    z-index: 2;
+    border-radius: 1px;
+    margin-left:-16px;
+    background-color:   rgb(12,35,42);
+    color: white;
+}
+
+#morghanKennedyTwo {
+    /* background-color:   rgb(214,	82,	119	); */
+    top: 1323px;
+    left: 134px;
+    color: white;
+}
+
+#chazzyLakeTwo {
+    /* background-color:   rgb(253, 210, 149); */
+    top: 1323px;
+    left: 753px;
+    /* color: rgb(12,35,42); */
+}
+
+#wayneTuckerTwo {
+    /* background-color:   rgb(12,35,42); */
+    top: 1486px;
+    left: 444px;
+    color: white;
+}
+
+#nyahGraceTwo {
+    /* background-color:   rgb(0,134,111); */
+    top: 1486px;
+    left: 1063px;
+    color: white;
+}
+
+#DevoyeTwo {
+    /* background-color: rgb(20,106,211); */
+    top: 1678px;
+    left: 134px;
+    color: white;
+}
+
+#TaruneTwo {
+    /* background-color: rgb(214,	82,	119	); */
+    top: 1678px;
+    left: 753px;
+    color: white;
+}
+
 
 
 .logoBG {
-    /* background-image: url('../images/logoBG.png');
-    background-position: center;
-    background-repeat: no-repeat; */
     opacity:.1;
-    color: rgb(20,106,211);
+    /* color: rgb(20,106,211); */
+    color: red;
     left:-100px;
     background-size: 1000px;
     position: absolute;
     width: 106.9%;
-    height: 606px;
-    /* border: 2px solid blue; */
-    z-index: -1;
-    top: 400px;
+    height: 506px;
+    z-index: -2;
+    top: 1100px;
     text-align:center;
-    font-family: 'Bukhari Script';
+    font-family: 'Bukhari-Script';
     font-size: 700px;
     overflow: hidden;
-    /* display: none; */
+    display: none;
+}
+
+#logoBGimg {
+    background-image: url('../images/logoBGimg.png');
+    background-size: 100%;
+    background-position-x:0px;
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+    margin-left: -5%;
+    /* left:-50px; */
+    position: absolute;
+    width: 101.5%;
+    height: 806px;
+    z-index: -5;
+    top: 1200px;
+    overflow: hidden;
 }
 
 footer {
     background-color: rgb(214,	82,	119);
-    position: absolute;
     font-size: 20px;
     font-weight: 300;
     color: rgb(12,35,42);
     margin-left: -5%;
-    width: 108.7%;
-    top: 800px;
+    width: 105%;
+    position: absolute;
+    top: 1800px;
     left:0;
     height: 200px;
-    /* border-top: 5px solid white; */
-    border-bottom: 20px solid white;
+    border-top: 5px solid white;
+    border-bottom: 15px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
 }
 
+#links {
+    margin-left:5%;
+}
+
+#links a {text-decoration: none;
+   }
+
+
 .socials {
     /* margin-bottom: 75px; */
     height: 55px;
     width: 55px;
-    transition: .2s ease-in-out;
+    margin-bottom: -20px;
 }
-
-/* .socials:hover {
-    filter: grayscale(100%) brightness(990%);
-} */
 
 #footerText {
     position: absolute;
     font-size: 10px;
+    margin-left:5%;
     top: 195px;
 }
