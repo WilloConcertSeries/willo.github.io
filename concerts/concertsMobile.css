@@ -1,0 +1,391 @@
+@import url(https://github.com/WilloConcertSeries/willoconcertseries.github.io/blob/main/fonts/AvenirNextLTPro-Regular.otf);
+@import url(https://github.com/WilloConcertSeries/willoconcertseries.github.io/blob/main/fonts/AvenirNextLTPro-Bold.otf);
+@import url(https://github.com/WilloConcertSeries/willoconcertseries.github.io/blob/main/fonts/AvenirNextLTPro-Demi.otf);
+@import url(https://github.com/WilloConcertSeries/willoconcertseries.github.io/blob/main/fonts/AvenirNextLTPro-It.otf);
+@import url(https://github.com/WilloConcertSeries/willoconcertseries.github.io/blob/main/fonts/CooperHewitt-Bold.otf);
+@import url(https://github.com/WilloConcertSeries/willoconcertseries.github.io/blob/main/fonts/CooperHewitt-Book.otf);
+@import url(https://github.com/WilloConcertSeries/willoconcertseries.github.io/blob/main/fonts/CooperHewitt-Light.otf);
+@import url(https://github.com/WilloConcertSeries/willoconcertseries.github.io/blob/main/fonts/CooperHewitt-Medium.otf);
+@import url(https://github.com/WilloConcertSeries/willoconcertseries.github.io/blob/main/fonts/CooperHewitt-Thin.otf);
+@import url(https://github.com/WilloConcertSeries/willoconcertseries.github.io/blob/main/fonts/Bukhari%20Script.ttf);
+
+
+body{
+    /* color: white; */
+    font-family: 'Cooper Hewitt', sans-serif;
+    font-weight: 800;
+    margin:0;
+    /* margin-left: 10px; */
+    background-color: white;
+    /* background-image: 
+    linear-gradient(to bottom, 
+                     rgba(255, 255, 255, 1),     
+                     rgba(255, 255, 255, 1), 
+                     rgba(255, 255, 255, 0.5), 
+                     rgba(255, 255, 255, 0), 
+                     rgb(255, 255, 255)
+                     ),url('../images/squiggle3x3.jpg'); */
+    background-repeat: no-repeat;
+    background-size: 1800px;
+    
+    /* background-position-x: 200px; */
+}
+
+
+#menu-1 {
+    transition: 0.5s ease-in-out;
+    font-size: 1.1em;
+    font-weight: 600;
+    position: absolute;
+    color: rgb(12,35,42);
+    left: 20px;
+    font-size: 20px;
+    margin: 0;
+    margin-top:.5%;
+    padding: 7px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.logo {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed;
+    top: 40px; */
+    width: 90%;
+    margin: auto;
+    margin-top: 2%;
+    z-index: 5;
+    transition: .3s ease-in-out;
+}
+
+#logoLink {
+    /* background-color: rgb(214,	82,	119	); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-size: 130px;
+    background-position: center;
+    border-radius: 10px;
+}
+
+/* .logo:hover {
+   opacity: 0;
+
+} */
+
+.logoHover {
+display: none;
+}
+
+#fullLogo {
+    height: 140px;
+}
+
+.icon {
+    height: 170px;
+}
+
+header {
+    display: none;
+
+
+}
+
+nav {
+    font-size: 2.2vh;
+    font-weight: 500;
+    width: 450px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Avenir';
+    font-weight: 800;
+    /* height: 10px;
+    background-color: red; */
+    transition: 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: rgb(225,	133,	157);
+}
+
+#big-menu {
+    /* background-image: url(../images/squiggle.jpg); */
+    background-color: #CAEAEA;
+    background-size: 100vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    overflow-y: visible;
+    overflow-x: auto;
+    padding: 15px 15px;
+    position: fixed;
+    transition: all 0.35s ease-in-out;
+    transform: translateX(-200%);
+    color: rgb(12,35,42);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9;
+
+}
+
+
+#big-menu.toggle-open { 
+    transform: translateX(0%);
+    opacity: 1;
+   
+}
+
+
+#big-menu a, #big-menu a:focus, #big-menu a:visited {
+    color:rgb(12,35,42);
+    /* border-bottom: 2px solid #ddf8f8; */
+    display: block;
+    font-size: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+#logoBGimgMobile {
+    background-image: url('../images/logoBGimgmobile.png');
+    background-size: 100%;
+    background-position-x:0px;
+    background-position-y: 106%;
+    background-repeat: no-repeat;
+    /* left:-50px; */
+    position: absolute;
+    width: 100%;
+   height: 100%;
+    z-index: -5;
+    bottom:0;
+    overflow: hidden;
+}
+
+#big-menu-close {
+    background-image: url('../icons/close.png');
+    /* background-color: rgb(12,35,42); */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 4em;
+    width: 4em;
+    background-size: 1.5em;
+    margin-top: 55px;
+}
+
+.mobileLineBreak {
+    margin: auto;
+    margin-top:20px;
+    width: 90%;
+    z-index:-6;
+    
+}
+
+.mobileLineBreak hr {
+    /* width: 90%; */
+    border-top: 1px solid rgb(248, 253, 255);
+    text-align: center;
+}
+
+
+
+#concertVids {
+    margin: auto;
+    margin-top: 20px;
+    /* margin-top: 50px; */
+    width: 90%;
+    /* display: flex;
+    justify-content: center; */
+    color: rgb(12,35,42);
+    
+}
+
+.desktopConcert {
+    display: none;
+}
+
+.mobileConcert {
+    width: 100%;
+    height: 50vw;
+}
+
+
+.artistName {
+    font-size: 40px;
+    margin-top: 5px;
+    width: 70%;
+
+}
+
+.concertDate {
+    margin-top: -5px;
+}
+
+.concertSocials {
+    display: none;
+}
+
+.longName {
+    display: none;
+}
+
+.mobileConcertSocials {
+    /* position: absolute;
+    right:323px;
+    margin-top: -69px; */
+    float: right;
+    margin-top: 3px;
+    margin-right: -4px;
+    /* display: none; */
+}
+
+
+.mobileConcertSocials img  {
+    height: 43px;
+    width: 43px;
+    z-index: -2;
+}
+
+.mobileConcertSocials a {
+    text-decoration: none;
+}
+
+
+.mobileConcertSocials #spotify  {
+    height: 34px;
+    width: 34px;
+    padding-bottom: 3px;
+    /* background-color: white; */
+    /* margin-top: 10px; */
+}
+
+.concertDescription {
+    /* display: none; */
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    font-weight: 400;
+    /* border: 2px solid red; */
+    text-align: justify;
+    font-size: 15px;
+}
+
+.concertLineBreak {
+    margin-top: 40px;
+    border-top: 1px solid rgb(248, 253, 255);
+}
+
+
+
+.mainTwo {
+    margin-top:100px;
+    margin-left:20px;
+    height: 800px;
+    overflow: hidden;
+    display: none;
+    justify-content: center;
+    /* background-color: rgb(253, 210, 149); */
+}
+
+.logoBG {
+    opacity:.1;
+    /* color: rgb(20,106,211); */
+    color: red;
+    left:-100px;
+    background-size: 1000px;
+    position: absolute;
+    width: 106.9%;
+    height: 506px;
+    z-index: -2;
+    top: 1100px;
+    text-align:center;
+    font-family: 'Bukhari-Script';
+    font-size: 700px;
+    overflow: hidden;
+    display: none;
+}
+
+
+#logoBGimg {
+    background-image: url('../images/logoBGimg.png');
+    background-size: 100%;
+    background-position-x:0px;
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+    /* margin-left: -5%; */
+    /* left:-50px; */
+    position: fixed;
+    width: 101.5%;
+    height: 206px;
+    z-index: -5;
+    bottom: 0;
+    overflow: hidden;
+}
+
+footer {
+    background-color: rgb(214,	82,	119);
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(12,35,42);
+    width: 100%;
+    /* position: absolute;
+    top: 2020px;
+    left:0; */
+    height: 100px;
+    margin-top: 20px;
+    /* border-top: 5px solid white; */
+    /* border-bottom: 10px solid  #ffffff; */
+    z-index: 1;
+
+}
+/* FFC2B4;CAEAEA */
+
+#links {
+    margin: 0;
+    height: 98%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#links a {text-decoration: none;
+   }
+
+
+.socials {
+    /* margin-bottom: 75px; */
+    height: 55px;
+    width: 55px;
+    margin-bottom: -5px;
+}
+
+#footerText {
+    /* position: absolute; */
+    font-size: 7px;
+    padding-top:4px;
+    margin: 0;
+    color:  rgb(12,35,42);
+    margin-top: 0px;
+    text-align: center;
+    display: none;
+
+    /* top: 195px; */
+}
+

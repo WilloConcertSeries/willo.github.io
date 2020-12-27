@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Willo | Events</title>
-    <link rel="stylesheet" href="concerts.css">
+    <link rel="stylesheet" media="screen and (min-width: 1000px)" href="../concerts/concerts.css">
+    <link rel="stylesheet" media="screen and (max-width: 992px)" href="../concerts/concertsMobile.css">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
@@ -13,9 +14,10 @@
 </head>
 <body>
     <div class="logo">
-        <a href="../index.html">
-            <!-- <img class="icon" src="../images/Willo text logo.png"></img> -->
+        <div class="menu-box" id="menu-1">&#9776</div>
+        <a id="logoLink" href="../index.html">
             <img id="fullLogo" src="../images/Willo logo fixed 2.png"></img>
+            <!-- <img class="icon" src="../images/Willo text logo.png"></img> -->
         </a>
     </div>
     <div class="logoHover">
@@ -34,13 +36,299 @@
             <!-- <a href="../contact/contact.html" id="Contact">CONTACT</a> -->
             <a href="mailto:willoconcertseries@gmail.com">CONTACT</a>  
         </nav>
-     
     </header>
-    <!-- <main> -->
-     
-        <!-- <div class="square"></div> -->
-    <!-- </main> -->
-    <p class="Featuring">Featuring:</p>
+
+    <aside id="big-menu" class="mobileOnly">
+        <a href="../index.html" id="Home" class="navigation"> HOME</a>
+        
+        <a href="../concerts/concerts.html" id="Concerts" class="navigation">CONCERTS</a>
+        
+        <a href="../about/about.html" id="About" class="navigation">ABOUT</a>
+        
+        <!-- <a href="../contact/contact.html" id="Contact">CONTACT</a> -->
+        <a href="mailto:willoconcertseries@gmail.com">CONTACT</a>  
+        <div id="logoBGimgMobile"></div>
+        <br>
+        <div class="button" id="big-menu-close"></div>
+        
+    </aside>     
+
+    <div class="mobileLineBreak">
+        <hr>
+    </div>
+
+    <div id="concertVids">
+        <div class="concert">
+            <iframe class="desktopConcert" width="784" height="441" src="https://www.youtube.com/embed/qhUOaSJkO1o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="mobileConcert" src="https://www.youtube.com/embed/qhUOaSJkO1o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="mobileConcertSocials">
+                <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                    <img class="socials" id="spotify" src="../icons/icons8-spotify-100-2.png">
+                </a>
+                <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                    <img class="socials" class="IG" src="../icons/icons8-instagram-384 copy.png">
+                </a>
+            </div>
+            <div class="concertInfo">
+                <div class="artistName">UWADE</div>
+                <div class="concertDate">October 2020</div>
+                <div class="concertSocials">
+                    <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                        <img class="socials" id="spotify" src="../icons/icons8-spotify-100-2.png">
+                    </a>
+                    <a href="https://www.instagram.com/uwade.music/">
+                        <img class="socials" class="IG" src="../icons/icons8-instagram-384 copy.png">
+                    </a>
+                </div>
+                <div class="concertDescription">
+                    Born in Nigeria and raised in North Carolina, Uwade has had her fair share of musical influences.
+                Though she got her start singing in church choirs, over the years she has ventured into folk, rock, R&B and indie, and she recently featured on the new Fleet Foxes record.
+                Her honey-smooth voice eases the soul, while her emotional lyrics to the longings of the heart. 
+                Last summer, Uwade planted her musical roots with her single "Nostalgia", and has so much more to share with the world. She hopes you'll be along for the ride.
+                </div>
+                <hr class=concertLineBreak>
+            </div>
+        </div>
+        <div class="concert">
+            <iframe class="desktopConcert" width="784" height="441" src="https://www.youtube.com/embed/dsBixRgasnw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="mobileConcert" src="https://www.youtube.com/embed/dsBixRgasnw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="mobileConcertSocials">
+                <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                    <img class="socials" id="spotify" src="../icons/icons8-spotify-100-2.png">
+                </a>
+                <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                    <img class="socials" class="IG" src="../icons/icons8-instagram-384 copy.png">
+                </a>
+            </div>
+            <div class="concertInfo">
+                <div class="artistName">NOIA</div>
+                <div class="concertDate">October 2020</div>
+                <div class="concertSocials">
+                    <a href="https://open.spotify.com/artist/7ME5Ue2P7g1BP11FRWr7LA?si=-D-e-hnHRJqRuXMnlniXUg">
+                        <img class="socials" id="spotify" src="../icons/icons8-spotify-100-2.png">
+                    </a>
+                    <a href="https://www.instagram.com/noiagisela/">
+                        <img class="socials" class="IG" src="../icons/icons8-instagram-384 copy.png">
+                    </a>
+                </div>
+                <div class="concertDescription">
+                    NOIA is the solo project of composer/singer Gisela Fulla. Gisela was born and raised in Barcelona by a family of activists.
+                    She moved to NY and began working as a sound designer/mixer and music composer for film. She also started producing music with glitch sound design and traces of traditional Spanish melodies under the name of NOIA, which means “ girl” in catalan.
+                    She sings in Spanish, English and Catalan. She has released two records "Hàbits" and "Crisàlida“ via Cascine Records and her songs have reached 4 millions plays on Spotify.
+                    </div>
+                    <hr class=concertLineBreak>
+                </div>
+        </div>
+        <div class="concert">
+            <iframe class="desktopConcert" width="784" height="441" src="https://www.youtube.com/embed/iKWwRdbOhB0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="mobileConcert" src="https://www.youtube.com/embed/iKWwRdbOhB0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="mobileConcertSocials">
+                <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                    <img class="socials" id="spotify" src="../icons/icons8-spotify-100-2.png">
+                </a>
+                <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                    <img class="socials" class="IG" src="../icons/icons8-instagram-384 copy.png">
+                </a>
+            </div>
+            <div class="concertInfo">
+                <div class="artistName">NYAH GRACE</div>
+                <div class="concertDate">October 2020</div>
+                <div class="concertSocials">
+                    <a href="https://open.spotify.com/artist/1WfCU4DPKY0jvcqEWU34UK?si=bmOizfCTSqOLm31iDtrtRw">
+                        <img class="socials" id="spotify" src="../icons/icons8-spotify-100-2.png">
+                    </a>
+                    <a href="https://instagram.com/_nyahgrace">
+                        <img class="socials" class="IG" src="../icons/icons8-instagram-384 copy.png">
+                    </a>
+                </div>
+                <div class="concertDescription">
+                    Nyah Grace is a teenage prodigy
+                    with an old soul, a love of new tech, an astonishing voice, and a
+                    knack for telling stories.
+                    Her debut album, Honey Coloured, is an instant classic that's primed and ready for 2020.
+
+                    </div>
+                    <hr class=concertLineBreak>
+                </div>
+        </div>
+        <div class="concert">
+            <iframe class="desktopConcert" width="784" height="441" src="https://www.youtube.com/embed/dsBixRgasnw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="mobileConcert" src="https://www.youtube.com/embed/dsBixRgasnw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="mobileConcertSocials">
+                <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                    <img class="socials" id="spotify" src="../icons/icons8-spotify-100-2.png">
+                </a>
+                <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                    <img class="socials" class="IG" src="../icons/icons8-instagram-384 copy.png">
+                </a>
+            </div>
+            <div class="concertInfo">
+                <div class="artistName">WAYNE TUCKER</div>
+                <div class="concertDate">September 2020</div>
+                <div class="concertSocials">
+                    <a href="https://open.spotify.com/artist/7yx2PV5XJ94vQsNgQhHEBW?si=Im5fldPpRQqXhwZojw4Z8w">
+                        <img class="socials" id="spotify" src="../icons/icons8-spotify-100-2.png">
+                    </a>
+                    <a href="https://www.instagram.com/wayneeverest/">
+                        <img class="socials" class="IG" src="../icons/icons8-instagram-384 copy.png">
+                    </a>
+                </div>
+                <div class="concertDescription">
+                    Wayne Tucker is a trumpet player, composer, arranger and vocalist based in New York City. He is a 2009 graduate of the Jazz Studies Program at SUNY Purchase under the direction of Todd Coolman.
+                    Wayne has performed, toured and recorded with many of today's current jazz stars including Kurt Elling, Al Foster, Dee Dee Bridgewater and Cyrille Theatreaimee, pop stars like Taylor Swift, David Crosby, Elvis Costello, Matt Simons and Eric Hutchinson, R&B singers like Ne-Yo and Gabriel Garzon-Montano, hip hop artists such as Jidenna and Ryan Leslie, and with rock bands like Brass Against.
+
+                    </div>
+                    <hr class=concertLineBreak>
+                </div>
+        </div>
+        <div class="concert">
+            <iframe class="desktopConcert" width="784" height="441" src="https://www.youtube.com/embed/dsBixRgasnw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="mobileConcert"  src="https://www.youtube.com/embed/dsBixRgasnw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="mobileConcertSocials">
+                <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                    <img class="socials" id="spotify" src="../icons/icons8-spotify-100-2.png">
+                </a>
+                <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                    <img class="socials" class="IG" src="../icons/icons8-instagram-384 copy.png">
+                </a>
+            </div>
+            <div class="concertInfo">
+                <div class="artistName">MASAYA JUNIOR</div>
+                <div class="concertDate">September 2020</div>
+                <div class="concertSocials">
+                    <a href="https://open.spotify.com/artist/75xEQ1MY4vA7mtfgbWzemm?si=lazJTclGQmOPhnSUHG5G5A">
+                        <img class="socials" id="spotify" src="../icons/icons8-spotify-100-2.png">
+                    </a>
+                    <a href="https://www.instagram.com/masayajunior/">
+                        <img class="socials" class="IG" src="../icons/icons8-instagram-384 copy.png">
+                    </a>
+                </div>
+                <div class="concertDescription">
+                    "The Masaya Junior alias is mainly a beatmaking and production-oriented project, which aims to combine the electronic, club, and soul influences which have defined the past 5-10 years of my musical life with the guitar-based dream pop, shoegaze, and ambient music that influenced me when I first started recording music."
+                    </div>
+                    <hr class=concertLineBreak>
+                </div>
+        </div>
+        <div class="concert">
+            <iframe class="desktopConcert" width="784" height="441" src="https://www.youtube.com/embed/dsBixRgasnw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="mobileConcert" src="https://www.youtube.com/embed/dsBixRgasnw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="mobileConcertSocials">
+                <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                    <img class="socials" id="spotify" src="../icons/icons8-spotify-100-2.png">
+                </a>
+                <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                    <img class="socials" class="IG" src="../icons/icons8-instagram-384 copy.png">
+                </a>
+            </div>
+            <div class="concertInfo">
+                <div class="artistName">TARUNE</div>
+                <div class="concertDate">August 2020</div>
+                <div class="concertSocials">
+                    <a href="https://open.spotify.com/artist/2tIerRKCwa3Zz1oVBDOUlq?si=ISVwoZzvQLacwM8-xP4pUA">
+                        <img class="socials" id="spotify" src="../icons/icons8-spotify-100-2.png">
+                    </a>
+                    <a href="https://www.instagram.com/tarunescape/">
+                        <img class="socials" class="IG" src="../icons/icons8-instagram-384 copy.png">
+                    </a>
+                </div>
+                <div class="concertDescription">
+                    Tarune is the folk-soul solo project of Giullian Yao Gioiello.
+                    He melds layers of bare vocals, musing rhythms, and understated production elements to build a meditative journey
+                    His songs are all recorded and produced entirely at his apartment in the East Village, NY.
+
+                    </div>
+                    <hr class=concertLineBreak>
+                </div>
+        </div>
+        <div class="concert">
+            <iframe class="desktopConcert" width="784" height="441" src="https://www.youtube.com/embed/dsBixRgasnw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="mobileConcert" src="https://www.youtube.com/embed/dsBixRgasnw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="mobileConcertSocials">
+                <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                    <img class="socials" id="spotify" src="../icons/icons8-spotify-100-2.png">
+                </a>
+                <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                    <img class="socials" class="IG" src="../icons/icons8-instagram-384 copy.png">
+                </a>
+            </div>
+            <div class="concertInfo">
+                <div class="artistName">MORGHAN KENNEDY</div>
+                <div class="concertDate">July 2020</div>
+                <div class="concertSocials">
+                    <a href="https://open.spotify.com/artist/1eLVnih3By052aSvmaQksk?si=ojiLUvYOT7Sz8QDBiQVBDA">
+                        <img class="socials" id="spotify" src="../icons/icons8-spotify-100-2.png">
+                    </a>
+                    <a href="https://www.instagram.com/morghankb/">
+                        <img class="socials" class="IG" src="../icons/icons8-instagram-384 copy.png">
+                    </a>
+                </div>
+                <div class="concertDescription">
+                    Outside of music, Morghan is an activist, a recent graduate of NYU and works with several nonprofits specializing in supporting performance artists in underrepresented communities. Morghan's latest single, Aces, is available on all major streaming platforms.
+                    </div>
+                    <hr class=concertLineBreak>
+                </div>
+        </div>
+        <div class="concert">
+            <iframe class="desktopConcert" width="784" height="441" src="https://www.youtube.com/embed/dsBixRgasnw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="mobileConcert" src="https://www.youtube.com/embed/dsBixRgasnw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="mobileConcertSocials">
+                <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                    <img class="socials" id="spotify" src="../icons/icons8-spotify-100-2.png">
+                </a>
+                <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                    <img class="socials" class="IG" src="../icons/icons8-instagram-384 copy.png">
+                </a>
+            </div>
+            <div class="concertInfo">
+                <div class="artistName">CHAZZY LAKE</div>
+                <div class="concertDate">July 2020</div>
+                <div class="concertSocials">
+                    <a href="https://open.spotify.com/artist/6n5NQNoL3ye1XFqPwmu2nH?si=ELHDOHlwSHe_jOpgIAlZ-A">
+                        <img class="socials" id="spotify" src="../icons/icons8-spotify-100-2.png">
+                    </a>
+                    <a href="https://www.instagram.com/chazzylake/">
+                        <img class="socials" class="IG" src="../icons/icons8-instagram-384 copy.png">
+                    </a>
+                </div>
+                <div class="concertDescription">
+                    Based in Brooklyn and Burlington, Vermont, Chazzy Lake is a former member of Bison, a punk-disco project, and a current member of J Bengoy. He recently released a cover of Dolly Parton's "Here I am,” and is donating all proceeds from sales for the song on bandcamp to the Black Trans Coalition Covid-19 Relief Fund.
+                    His new album, "Sup, Circumstance."" Featuring the single "Not Afraid of your Crying Eyes," is due for release on Bandcamp august 2020.
+
+                    </div>
+                    <hr class=concertLineBreak>
+                </div>
+        </div>
+        <div class="concert">
+            <iframe class="desktopConcert" width="784" height="441" src="https://www.youtube.com/embed/dsBixRgasnw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="mobileConcert" src="https://www.youtube.com/embed/dsBixRgasnw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="mobileConcertSocials">
+                <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                    <img class="socials" id="spotify" src="../icons/icons8-spotify-100-2.png">
+                </a>
+                <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                    <img class="socials" class="IG" src="../icons/icons8-instagram-384 copy.png">
+                </a>
+            </div>
+            <div class="concertInfo">
+                <div class="artistName">DEVOYE</div>
+                <div class="concertDate">June 2020</div>
+                <div class="concertSocials">
+                    <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                        <img class="socials" id="spotify" src="../icons/icons8-spotify-100-2.png">
+                    </a>
+                    <a href="https://open.spotify.com/artist/57qPRqUfnRY0KJtO5lrjWL?si=pTlHMvmsTdagPvLx4XhqHQ">
+                        <img class="socials" class="IG" src="../icons/icons8-instagram-384 copy.png">
+                    </a>
+                </div>
+                <div class="concertDescription">
+                        "As a multi-instrumentalist, producer and DJ, I strive to intermingle the sensibilities from each aspect of my artistry to bridge connections between creator and consumer, creating an expansive aural experience." 
+                        <br> <br>
+                        Entranced by the empathic conncections made between individuals and sound, Devoye explores the natural and ethereal through various realms of sound.
+                    </div>
+                    <hr class=concertLineBreak>
+                </div>
+            </div>
+        </div>
     <div class="mainTwo">
         <div id="typeOne">
             <img class="Performers" src="/images/transparentPerformers.png">
@@ -68,6 +356,11 @@
     </div>
     <div class="logoBG"> Willo</div>
     <div id="logoBGimg"></div>
+
+    <!-- <div class="mobileLineBreak">
+        <hr>
+    </div> -->
+
     <footer>
         <div id="links">
             <a href="https://www.facebook.com/willoconcertseries/">
@@ -80,6 +373,8 @@
         </div>
         <p id="footerText">©2020 Willo. All rights reserved.</p>
     </footer>
+
+    <script src="../concerts/concerts.js"></script>
 </body>
 </html>
 

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Willo | Home</title>
-    <link rel="stylesheet" href="../homepage/homepage.css">
+    <link rel="stylesheet" media="screen and (min-width: 1000px)" href="../homepage/homepage.css">
+    <link rel="stylesheet" media="screen and (max-width: 992px)" href="../homepage/homepageMobile.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -14,7 +15,8 @@
 </head>
 <body>
     <div class="logo">
-        <a href="../index.html">
+        <div class="menu-box" id="menu-1">&#9776</div>
+        <a id="logoLink" href="../index.html">
             <img id="fullLogo" src="../images/Willo logo fixed 2.png"></img>
             <!-- <img class="icon" src="../images/Willo text logo.png"></img> -->
         </a>
@@ -35,30 +37,60 @@
             <!-- <a href="../contact/contact.html" id="Contact">CONTACT</a> -->
             <a href="mailto:willoconcertseries@gmail.com">CONTACT</a>  
         </nav>
-     
     </header>
+
+    <aside id="big-menu" class="mobileOnly">
+        <a href="../index.html" id="Home" class="navigation"> HOME</a>
+        
+        <a href="../concerts/concerts.html" id="Concerts" class="navigation">CONCERTS</a>
+        
+        <a href="../about/about.html" id="About" class="navigation">ABOUT</a>
+        
+        <!-- <a href="../contact/contact.html" id="Contact">CONTACT</a> -->
+        <a href="mailto:willoconcertseries@gmail.com">CONTACT</a>  
+        <div id="logoBGimgMobile"></div>
+        <br>
+        <div class="button" id="big-menu-close"></div>
+        
+    </aside>     
+
+    <div class="mobileLineBreak">
+        <hr>
+    </div>
+
+
     <main>
         <h1>Mindfulness through Music .</h1>
         <img id="Slogan" src="./images/MtM 3.48.58 PM.png">
+        <img id="SloganMobile" src="./images/Mindfulness through Music Mobile.png">
     </main>
 
     <div id="FBContainer">
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fwilloconcertseries&tabs=events&width=800&height=244&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="244" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        <iframe  id="FBWidget" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fwilloconcertseries&tabs=events&width=800&height=244&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="244" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
     </div>
+    <!-- <object data="https://docs.google.com/spreadsheets/u/1/d/16p7BI83By5RnO9_m5_yrBZ2w4FQ15t_-JdeeXOX_lKM/gviz/tq?tqx=out:html&tq&gid=0">
+    </object> -->
+    <!-- <button onclick="changeStuff()">Change Stuff</button> -->
+    <!-- <iframe id="googleSheet" src="https://docs.google.com/spreadsheets/u/1/d/16p7BI83By5RnO9_m5_yrBZ2w4FQ15t_-JdeeXOX_lKM/gviz/tq?tqx=out:html&tq&gid=0"></iframe> -->
     <div class="logoBG"> Willo</div>
     <div id="logoBGimg"></div>
+    
+    <div class="mobileLineBreak">
+        <hr>
+    </div>
+
     <footer>
         <div id="links">
             <a href="https://www.facebook.com/willoconcertseries/">
-                <img class="socials" src="./icons/icons8-facebook-384 copy.png">
+                <img class="socials" src="../icons/icons8-facebook-384 copy.png">
             </a>
             &emsp; | &emsp;
             <a href="https://www.instagram.com/willoconcertseries/">
-                <img class="socials" src="./icons/icons8-instagram-384 copy.png">
+                <img class="socials" src="../icons/icons8-instagram-384 copy.png">
             </a>
         </div>
-        <p id="footerText">Version 1.1.5 | ©2020 Willo. All rights reserved.</p>
+        <p id="footerText">©2020 Willo. All rights reserved. Version 1.1.6</p>
     </footer>
-    
+    <script src="./homepage/homepage.js"></script>
 </body>
 </html>

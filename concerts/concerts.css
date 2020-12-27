@@ -18,10 +18,24 @@ body{
     margin-left: 50px;
     margin-right: 50px;
     background-image: 
-    linear-gradient( rgba(255, 255, 255, 0), rgb(255, 255, 255),rgb(255, 255, 255), rgb(255, 255, 255)),url('../images/squiggle.jpg');
+    linear-gradient( rgba(255, 255, 255, 0), 
+                     rgba(255, 255, 255, 0.95),
+                     rgb(255, 255, 255),
+                     rgb(255, 255, 255),
+                     rgba(255, 255, 255, 0.95),
+                     rgba(255, 255, 255, 0.95),
+                     rgb(255, 255, 255),
+                     rgb(255, 255, 255),
+                     rgba(255, 255, 255, 0.95),
+                     rgba(255, 255, 255, 0.95),
+                     rgb(255, 255, 255), 
+                     rgb(255, 255, 255),
+                     rgba(255, 255, 255, 0.95),
+                     rgba(255, 255, 255, 0.95),
+                     rgb(255, 255, 255)),
+                     url('../images/squiggle.jpg');
     /* background-repeat: no-repeat; */
     background-size: 600px;
-    height: 1000px;
     background-position-x: 200px;
 }
 
@@ -116,6 +130,14 @@ nav a:hover {
     color: rgb(225,	133,	157);
 }
 
+.menu-box {
+    display: none;
+}
+
+aside {
+    display: none;
+}
+
 main {
     margin: auto;
     /* border: 2px solid green; */
@@ -127,20 +149,110 @@ main {
     justify-content: center;
 }
 
+.mobileLineBreak {
+    display: none;
+}
+
+#concertVids {
+    margin-top: 250px;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* display: flex;
+    justify-content: center; */
+    color: rgb(12,35,42);
+    
+}
+
+.concert {
+    margin: auto;
+    width: 786px;
+}
+
+.desktopConcert {
+    display: block;
+    margin: auto;
+}
+
+.mobileConcert {
+    display: none;
+}
+
+
+.mobileConcertSocials {
+    display: none;
+}
+
+
+.artistName {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.concertDate {
+    margin-top: -5px;
+}
+
+.concertSocials {
+    /* position: absolute;
+    right:323px;
+    margin-top: -69px; */
+    float: right;
+    margin-top: -69px;
+    margin-right: -4px;
+}
+
+.concertSocials a {
+    text-decoration: none;
+}
+
+
+
+
+.concertSocials img  {
+    height: 43px;
+    width: 43px;
+    z-index: -2;
+}
+
+
+.concertSocials #spotify  {
+    height: 35px;
+    width: 35px;
+    padding-bottom: 4px;
+    background-color: white;
+    /* margin-top: 10px; */
+}
+
+
+.concertDescription {
+    /* display: none; */
+    width: 784px;
+    font-weight: 400;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.concertLineBreak {
+    margin-top: 40px;
+}
+
 .Featuring {
     text-align: center;
+    display: none;
     margin-top: 100px;
     color: rgb(12,35,42);
     text-shadow: 0px 0px 20px white;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0), rgba(255,255,255,1),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0));
 }
 
+
+
 .mainTwo {
     margin-top:100px;
     margin-left:20px;
     height: 800px;
     overflow: hidden;
-    display: flex;
+    display: none;
     justify-content: center;
     /* background-color: rgb(253, 210, 149); */
 }
@@ -332,6 +444,7 @@ main {
 }
 
 #logoBGimg {
+    display: none;
     background-image: url('../images/logoBGimg.png');
     background-size: 100%;
     background-position-x:0px;
@@ -352,14 +465,13 @@ footer {
     font-size: 20px;
     font-weight: 300;
     color: rgb(12,35,42);
-    margin-left: -5%;
-    width: 105%;
+    width: 100%;
     position: absolute;
-    top: 1800px;
+    margin-top: -5px ;
     left:0;
     height: 200px;
     border-top: 5px solid white;
-    border-bottom: 15px solid white;
+    border-bottom: 20px solid white;
     display: flex;
     justify-content: center;
     align-items: center;

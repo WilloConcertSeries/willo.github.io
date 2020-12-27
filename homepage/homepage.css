@@ -32,10 +32,14 @@ body{
     margin-right: 50px;
     /* background-color: lightcoral; */
     background-image: 
-    linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgb(255, 255, 255)),url('../images/squiggle.jpg');
-    /* background-repeat: no-repeat; */
-    background-size: 600px;
-    background-position-x: 200px;
+    linear-gradient(to bottom, 
+                     rgba(255, 255, 255, 0), 
+                     rgb(255, 255, 255), 
+                     rgb(255, 255, 255)
+                     ),url('../images/squiggle3x3.jpg');
+    background-repeat: no-repeat;
+    background-size: 1800px;
+    /* background-position-x: 200px; */
 }
 
 .logo {
@@ -129,6 +133,10 @@ nav a:hover {
     color: rgb(225,	133,	157);
 }
 
+.mobileLineBreak {
+    display: none;
+}
+
 main {
     color: rgb(12,35,42);
     font-family: 'Bukhari-Script';
@@ -146,6 +154,14 @@ main {
  
 }
 
+.menu-box {
+    display: none;
+}
+
+aside {
+    display: none;
+}
+
 #Slogan {
     height: 575px;
     position: absolute;
@@ -153,6 +169,10 @@ main {
     top: 190px;
     left: 0px;
 
+}
+
+#SloganMobile {
+    display: none;
 }
 
 h1 {
@@ -171,9 +191,13 @@ h1 {
 }
 
 
-iframe {
+#FBWidget {
     display: block;
     /* margin-left: 415px; */
+}
+
+#googleSheet {
+    width: 1000px;
 }
 
 

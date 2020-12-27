@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Willo | About</title>
-    <link rel="stylesheet" href="../about/about.css">
+    <link rel="stylesheet" media="screen and (min-width: 1000px)" href="../about/about.css">
+    <link rel="stylesheet" media="screen and (max-width: 992px)" href="../about/aboutMobile.css">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
@@ -13,9 +14,10 @@
 </head>
 <body>
     <div class="logo">
-        <a href="../index.html">
-            <!-- <img class="icon" src="../images/Willo text logo.png"></img> -->
+        <div class="menu-box" id="menu-1">&#9776</div>
+        <a id="logoLink" href="../index.html">
             <img id="fullLogo" src="../images/Willo logo fixed 2.png"></img>
+            <!-- <img class="icon" src="../images/Willo text logo.png"></img> -->
         </a>
     </div>
     <div class="logoHover">
@@ -35,47 +37,154 @@
             <a href="mailto:willoconcertseries@gmail.com">CONTACT</a>  
         </nav>
     </header>
-    <main>
-        <h1>What is Willo?</h1>
-        <p>
-            Willo is a virtual concert series that focuses on mindfulness. 
-            Mindfulness is the practice of being in the present moment, without judgment, 
-            by fully accepting one's thoughts and feelings. Music can be used to reach a state of 
-            mindfulness by concentrating on the beat and rhythm in order to stay present. Willo intends 
-            to offer a space to practice mindfulness through music and discuss how to engage with the uncertainty 
-            of the world around us. 
-        </p>
-        <br>
-        <hr>
-        <br>
-        <h2>The Story </h2>
-        <p>
-            My father passed away suddenly six months ago. It was devastating and I felt completely lost. 
-            It didn’t matter who I was with or where I was, but I couldn't focus on anything else. 
-            When I was in the hospital comforting my father in his final days, music was the only thing that allowed 
-            me to find clarity. It made me confident that I could handle this. After my father’s passing, I wanted to understand: 
-            What is it about music that makes it so healing? 
-            I started to dig into the research. I discovered that what music is offering is mindfulness, a practice in which one 
-            consciously brings their thoughts into the present moment. Mindfulness can help humans cope with everything from 
-            unimaginable tragedy down to day-to-day stresses, I wanted to create a space where people could develop this skill and 
-            apply it towards their own lives. 
 
-        </p>
+    <aside id="big-menu" class="mobileOnly">
+        <a href="../index.html" id="Home" class="navigation"> HOME</a>
+        
+        <a href="../concerts/concerts.html" id="Concerts" class="navigation">CONCERTS</a>
+        
+        <a href="../about/about.html" id="About" class="navigation">ABOUT</a>
+        
+        <!-- <a href="../contact/contact.html" id="Contact">CONTACT</a> -->
+        <a href="mailto:willoconcertseries@gmail.com">CONTACT</a>  
+        <div id="logoBGimgMobile"></div>
         <br>
+        <div class="button" id="big-menu-close"></div>
+        
+    </aside>     
+
+    <div class="mobileLineBreak">
         <hr>
-        <br>
-        <h2>The Shows </h2>
-        <p>
-            In a world of constant pressure and difficulty, music and mindfulness can be a tool to help process the overwhelming 
-            feelings and uncertainty of life. Our series will focus not only on the practice of mindfulness through music, but also 
-            on discussion around how musicians practice mindfulness with their art. Each show lasts approximately 45 minutes. They
-             are introduced by our host, Crystal Desai, followed by a performance from our featured musician and concluded 
-             with a conversation to share reflections between host, performer and audience. 
-        </p>
+    </div>
+
+    <main>
+        <div class="aboutSection">
+            <h2 id="hOneAndTwo">What is Willo?</h2>
+            <p id="hOneParagraph">
+                Willo is a virtual concert series that focuses on mindfulness. 
+                Mindfulness is the practice of being in the present moment, without judgment, 
+                by fully accepting one's thoughts and feelings. Music can be used to reach a state of 
+                mindfulness by concentrating on the beat and rhythm in order to stay present. Willo intends 
+                to offer a space to practice mindfulness through music and discuss how to engage with the uncertainty 
+                of the world around us. 
+            </p>
+        </div>
+        <div class="aboutSection" id="theStoryMobile"> 
+            <h2>The Story </h2>
+            <p>
+                My father passed away suddenly six months ago. It was devastating and I felt completely lost. 
+                It didn’t matter who I was with or where I was, but I couldn't focus on anything else. 
+                When I was in the hospital comforting my father in his final days, music was the only thing that allowed 
+                me to find clarity. It made me confident that I could handle this. After my father’s passing, I wanted to understand: 
+                What is it about music that makes it so healing? 
+                I started to dig into the research. I discovered that what music is offering is mindfulness, a practice in which one 
+                consciously brings their thoughts into the present moment. Mindfulness can help humans cope with everything from 
+                unimaginable tragedy down to day-to-day stresses, I wanted to create a space where people could develop this skill and 
+                apply it towards their own lives. 
+                
+            </p>
+        </div>
+        <!-- <br>
+        <hr>
+        <br> -->
+        <div class="aboutSection" id="showFormat">
+            <h2>The Shows </h2>
+            <p>
+                In a world of constant pressure and difficulty, music and mindfulness can be a tool to help process the overwhelming 
+                feelings and uncertainty of life. Our series will focus not only on the practice of mindfulness through music, but also 
+                on discussion around how musicians practice mindfulness with their art. Willow concerts run approximately 45 minutes, with the following format:
+                <br>
+                <br>
+                <ul>
+                    <li>
+                        <h3>Intro</h3> Our host Crystal touches on the series' mission statement, gives an overview of the program, introduces the artist, and explains the mindfulness activity that will coincide with the performance.
+                    </li>
+                    <li>
+                        <h3>Performance</h3>  (runtimes are roughly correspond to a 4-5 song setlist)
+                    </li>
+                    <li> <h3>Conversation</h3>
+                        Hosts, musicians, and audience reflect on the emotions and sensations experienced during the performance and the concurrent mindfulness activity. (Headphone and microphone use is encouraged)
+                    </li>
+                    <li>
+                        <h3>Outro</h3> Crystal gives a few final details about the performer (where to find their work / follow and support them) before sending us off. 
+                    </li>
+                </ul>
+            
+
+            </p>
+        </div>  
+        <!-- <br>
+        <hr>
+        <br> -->
+        <div class="aboutSection" id="theStory"> 
+            <h2>The Story </h2>
+            <p>
+                My father passed away suddenly six months ago. It was devastating and I felt completely lost. 
+                It didn’t matter who I was with or where I was, but I couldn't focus on anything else. 
+                When I was in the hospital comforting my father in his final days, music was the only thing that allowed 
+                me to find clarity. It made me confident that I could handle this. After my father’s passing, I wanted to understand: 
+                What is it about music that makes it so healing? 
+                I started to dig into the research. I discovered that what music is offering is mindfulness, a practice in which one 
+                consciously brings their thoughts into the present moment. Mindfulness can help humans cope with everything from 
+                unimaginable tragedy down to day-to-day stresses, I wanted to create a space where people could develop this skill and 
+                apply it towards their own lives. 
+                
+            </p>
+        </div>
         <!-- <br> -->
         <!-- <hr>
         <br> -->
     </main>
+
+    <div id="mainTwo">
+        <div class="aboutSection">
+            <h2 id="hOneAndTwo">What is Willo?</h2>
+            <p id="hOneParagraph">
+                Willo is a virtual concert series that focuses on mindfulness. 
+                Mindfulness is the practice of being in the present moment, without judgment, 
+                by fully accepting one's thoughts and feelings. Music can be used to reach a state of 
+                mindfulness by concentrating on the beat and rhythm in order to stay present. Willo intends 
+                to offer a space to practice mindfulness through music and discuss how to engage with the uncertainty 
+                of the world around us. 
+            </p>
+        </div>
+        <!-- <br>
+        <hr>
+        <br> -->
+        <div class="aboutSection">
+            <h2>The Story </h2>
+            <p>
+                My father passed away suddenly six months ago. It was devastating and I felt completely lost. 
+                It didn’t matter who I was with or where I was, but I couldn't focus on anything else. 
+                When I was in the hospital comforting my father in his final days, music was the only thing that allowed 
+                me to find clarity. It made me confident that I could handle this. After my father’s passing, I wanted to understand: 
+                What is it about music that makes it so healing? 
+                I started to dig into the research. I discovered that what music is offering is mindfulness, a practice in which one 
+                consciously brings their thoughts into the present moment. Mindfulness can help humans cope with everything from 
+                unimaginable tragedy down to day-to-day stresses, I wanted to create a space where people could develop this skill and 
+                apply it towards their own lives. 
+
+            </p>
+        </div>  
+        <!-- <br>
+        <hr>
+        <br> -->
+        <div class="aboutSection">
+            <h2>The Shows </h2>
+            <p>
+                In a world of constant pressure and difficulty, music and mindfulness can be a tool to help process the overwhelming 
+                feelings and uncertainty of life. Our series will focus not only on the practice of mindfulness through music, but also 
+                on discussion around how musicians practice mindfulness with their art. Each show lasts approximately 45 minutes. They
+                are introduced by our host, Crystal Desai, followed by a performance from our featured musician and concluded 
+                with a conversation to share reflections between host, performer and audience. 
+
+
+            </p>
+        </div>
+        <!-- <br> -->
+        <!-- <hr>
+        <br> -->
+    </div>
 
     <div id="firstShowContainer">
         <img id="firstShow" src="../images/firstshow.jpg">
@@ -84,6 +193,11 @@
     
     <div class="logoBG"> Willo</div>
     <div id="logoBGimg"></div>
+
+    <div class="mobileLineBreak">
+        <hr>
+    </div>
+
     <footer>
         <div id="links">
             <a href="https://www.facebook.com/willoconcertseries/">
@@ -96,5 +210,6 @@
         </div>
         <p id="footerText">©2020 Willo. All rights reserved.</p>
     </footer>
+    <script src="./about.js"></script>
 </body>
 </html>
