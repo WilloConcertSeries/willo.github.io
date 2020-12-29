@@ -19,25 +19,23 @@ body{
     margin-right: 50px;
     background-image: 
     linear-gradient( rgba(255, 255, 255, 0), 
-                     rgba(255, 255, 255, 0.95),
                      rgb(255, 255, 255),
                      rgb(255, 255, 255),
-                     rgba(255, 255, 255, 0.95),
-                     rgba(255, 255, 255, 0.95),
                      rgb(255, 255, 255),
                      rgb(255, 255, 255),
-                     rgba(255, 255, 255, 0.95),
-                     rgba(255, 255, 255, 0.95),
-                     rgb(255, 255, 255), 
                      rgb(255, 255, 255),
-                     rgba(255, 255, 255, 0.95),
-                     rgba(255, 255, 255, 0.95),
+                     rgb(255, 255, 255),
+                     rgb(255, 255, 255),
+                     rgb(255, 255, 255),
+                     rgb(255, 255, 255),
+                     rgb(255, 255, 255),
                      rgb(255, 255, 255)),
                      url('../images/squiggle.jpg');
     /* background-repeat: no-repeat; */
     background-size: 600px;
     background-position-x: 200px;
 }
+
 
 .logo {
     background-color: rgb(214,	82,	119	);
@@ -444,19 +442,18 @@ main {
 }
 
 #logoBGimg {
-    display: none;
-    background-image: url('../images/logoBGimg.png');
+    background-image: url('../images/logoBGimgrealPNG.png');
     background-size: 100%;
     background-position-x:0px;
     background-position-y: 100px;
     background-repeat: no-repeat;
     margin-left: -5%;
     /* left:-50px; */
-    position: absolute;
+    position: fixed;
     width: 101.5%;
     height: 806px;
     z-index: -5;
-    top: 1200px;
+    top: 30%;
     overflow: hidden;
 }
 
